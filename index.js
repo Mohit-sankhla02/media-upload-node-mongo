@@ -8,7 +8,6 @@ const app = express();
 
 let gfs;
 connection();
-
 const conn = mongoose.connection;
 conn.once("open", function () {
     gfs = Grid(conn.db, mongoose.mongo);
